@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le damos sentido a lo que no tiene</title>
+    
+    <!-- Tipografía vintage desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Special Elite', monospace;
+            background-color: #f7eedc;
+            background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+            background-size: repeat;
+            background-attachment: fixed;
+            color: #3b2f2f;
+            line-height: 1.6;
+        }
+        a {
+            color: #6b4c3b;
+            text-decoration: none;
+        }
+        a:hover { text-decoration: underline; }
+        header {
+            background-color: rgba(215,193,160,0.9);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 2px solid #3b2f2f;
+        }
+        header h1 { margin: 0; font-size: 3em; letter-spacing: 1px; }
+        header p { font-style: italic; margin-top: 10px; font-size: 1.2em; }
+        nav {
+            background-color: rgba(201,177,138,0.9);
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a { margin: 0 20px; font-weight: bold; }
+        section { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+        h2 { border-bottom: 1px solid #3b2f2f; padding-bottom: 5px; margin-bottom: 20px; }
+        .proyecto { margin-bottom: 40px; }
+        .capitulo {
+            margin-bottom: 25px;
+            background-color: rgba(255,248,235,0.8);
+            padding: 20px;
+            border-left: 5px solid #6b4c3b;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+        }
+        .capitulo h4 { margin-top: 0; }
+        .navegacion { margin-top: 15px; }
+        button {
+            background-color: #6b4c3b;
+            color: #f4ecd8;
+            border: none;
+            padding: 8px 16px;
+            margin: 5px;
+            cursor: pointer;
+            font-family: 'Special Elite', monospace;
+            transition: 0.3s;
+        }
+        button:hover { background-color: #3b2f2f; }
+        .bio {
+            background-color: rgba(230,217,195,0.9);
+            padding: 20px;
+            border-left: 5px solid #6b4c3b;
+        }
+        form input, form textarea {
+            width: 100%; padding: 8px; margin: 5px 0 15px;
+            border: 1px solid #6b4c3b; background-color: #fff8f0;
+            font-family: 'Special Elite', monospace;
+        }
+        form textarea { resize: vertical; }
+        footer {
+            text-align: center; padding: 20px;
+            border-top: 2px solid #3b2f2f;
+            background-color: rgba(215,193,160,0.9); margin-top: 40px;
+        }
+        header, section, footer { animation: fadeIn 1s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px);} to { opacity: 1; transform: translateY(0);} }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Le damos sentido a lo que no tiene</h1>
+        <p>Un espacio para historias nacidas entre el insomnio y los recuerdos.</p>
+    </header>
+
+    <nav>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="proyecto">
+            <h3>Entre el sueño y la nada</h3>
+
+            <!-- Capítulo 1 -->
+            <div class="capitulo" id="cap1">
+                <h4>Capítulo 1</h4>
+                <p>Contenido del primer capítulo...</p>
+                <div class="navegacion">
+                    <button disabled>Anterior</button>
+                    <a href="#cap2"><button>Siguiente</button></a>
+                </div>
+            </div>
+
+            <!-- Capítulo 2 -->
+            <div class="capitulo" id="cap2">
+                <h4>Capítulo 2</h4>
+                <p>Contenido del segundo capítulo...</p>
+                <div class="navegacion">
+                    <a href="#cap1"><button>Anterior</button></a>
+                    <a href="#cap3"><button>Siguiente</button></a>
+                </div>
+            </div>
+
+            <!-- Capítulo 3 -->
+            <div class="capitulo" id="cap3">
+                <h4>Capítulo 3</h4>
+                <p>Contenido del tercer capítulo...</p>
+                <div class="navegacion">
+                    <a href="#cap2"><button>Anterior</button></a>
+                    <button disabled>Siguiente</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <div class="bio">
+            <p>Edgar Fretes es enfermero, viajero y observador de la vigilia y los sueños. Encuentra en la noche y en el insomnio la inspiración para escribir, convirtiendo recuerdos, pensamientos y silencios en palabras que buscan dar sentido a lo que no lo tiene. Entre el sueño y la nada es su primera obra publicada en este espacio.</p>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2025 Edgar Fretes. Todos los derechos reservados.
+    </footer>
+</body>
+</html>
