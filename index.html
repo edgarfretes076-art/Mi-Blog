@@ -3,109 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Le damos sentido a lo que no tiene</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Dancing+Script&display=swap');
-
-    body {
-      font-family: "Merriweather", Georgia, serif;
-      background-color: #fdfcf8;
-      color: #222;
-      line-height: 1.7;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      text-align: center;
-      padding: 80px 20px 50px;
-      border-bottom: 1px solid #ddd;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-style: italic;
-      color: #555;
-      font-size: 1.1rem;
-      margin-bottom: 15px;
-    }
-
-    .firma {
-      font-family: 'Dancing Script', cursive;
-      font-size: 1.8rem;
-      color: #444;
-    }
-
-    main {
-      max-width: 750px;
-      margin: 60px auto;
-      padding: 0 20px;
-    }
-
-    article {
-      margin-bottom: 80px;
-    }
-
-    article h2 {
-      font-size: 1.7rem;
-      margin-bottom: 10px;
-    }
-
-    article p {
-      text-align: justify;
-    }
-
-    footer {
-      border-top: 1px solid #ddd;
-      text-align: center;
-      padding: 40px 20px;
-      color: #666;
-      font-size: 0.95rem;
-    }
-
-    footer a {
-      color: #666;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <title>Blog personal de Edgar Fretes</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Le damos sentido a lo que no tiene</h1>
-    <p>por Edgar Fretes</p>
-    <div class="firma">— Edgar.</div>
+    <h1>Blog personal de Edgar Fretes</h1>
   </header>
 
-  <main>
-    <article>
-      <h2>Capítulo I — Entre el sueño y la nada</h2>
-      <p>
-        El sueño no comenzó como un sueño, sino como un recuerdo que se resistía a morir. 
-        Las paredes eran idénticas a las de mi habitación, pero la ventana daba hacia un cielo que no conocía. 
-        A veces pienso que los sueños son solo los lugares que olvidamos visitar mientras estamos despiertos.
-      </p>
-    </article>
+  <section class="bio">
+    <img src="tu-foto.jpg" alt="Edgar Fretes" class="profile-pic" />
+    <p><strong>Edgar Fretes</strong> (Paraguay, 2000). Licenciado en Enfermería y escritor. Nació en Paraguay y desde chico aprendió a observar lo invisible. Estudió Licenciatura en Enfermería, pero escribe para curar lo que no se ve. En sus textos explora los sueños, la memoria y las pequeñas cosas que dan sentido a la vida. Entre la ciencia y la introspección, busca entender el silencio, el insomnio y los recuerdos que se niegan a morir.</p>
+  </section>
 
-    <article>
-      <h2>Capítulo II — Despierto</h2>
-      <p>
-        No hay sonido más fuerte que el del silencio cuando uno vuelve del otro lado. 
-        Todo parece igual, pero algo se ha movido, aunque nadie más lo note. 
-        Quizás el insomnio no sea el enemigo, sino la puerta que dejamos entreabierta hacia nosotros mismos.
-      </p>
-    </article>
-  </main>
+  <section class="social">
+    <a href="https://www.youtube.com/channel/UCESCNZE8rzzsqDAy2nFk-SA?sub_confirmation=1" target="_blank">YouTube</a>
+    <a href="https://www.facebook.com/edgar.fretes.312295/?rdid=JmlWsL3MpDaUw9ua" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/fretes_riveros_edgar/" target="_blank">Instagram</a>
+    <a href="https://api.whatsapp.com/send?phone=595981495924&text=Hola%2C%20te%20escribo%20desde%20tu%20blog%20para%20consultarte%20sobre" target="_blank">WhatsApp</a>
+    <a href="https://www.tiktok.com/@edgarfretes095?is_from_webapp=1&sender_device=pc" target="_blank">TikTok</a>
+    <a href="https://x.com/EdgarFretes00?s=09" target="_blank">X</a>
+  </section>
+
+  <section class="posts">
+    <h2>Capítulos</h2>
+    <div class="post">
+      <h3>Introducción – Entre el sueño y la nada</h3>
+      <p>Hay momentos del día en que el cuerpo descansa, pero la mente se desliza... <br> Un relato que explora los límites entre la conciencia, el insomnio y la desaparición.</p>
+      <a href="capitulo1.html" class="btn">Leer más</a>
+    </div>
+    <div class="post">
+      <h3>Parte I – El pensamiento que no lo dejó dormir</h3>
+      <p>Una duda antes de dormir... y un viaje que empieza sin aviso. <br> A veces, el miedo no es más que una puerta abierta.</p>
+      <a href="capitulo2.html" class="btn">Leer más</a>
+    </div>
+  </section>
 
   <footer>
-    <p>© 2025 Edgar Fretes — Blog personal | <a href="#">Contacto</a></p>
+    <p>© 2025 Edgar Fretes · Todos los derechos reservados</p>
   </footer>
 </body>
 </html>

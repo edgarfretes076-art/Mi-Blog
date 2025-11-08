@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  background-color: #f2f2f2;
+  color: #222;
+  line-height: 1.8;
+}
+
+header {
+  text-align: center;
+  padding: 3rem 1rem 1rem;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.bio {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #000;
+}
+
+.social {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.social a {
+  color: #000;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social a:hover {
+  text-decoration: underline;
+}
+
+.posts {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  padding: 0 2rem;
+}
+
+.post {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.post h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #000;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Capítulos */
+body.chapter {
+  max-width: 800px;
+  margin: 3rem auto;
+  background-color: #f2f2f2;
+  padding: 0 1.5rem 3rem;
+}
+
+article h1, article h2 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+.btn-back {
+  display: block;
+  width: fit-content;
+  margin: 2rem auto 0;
+  text-decoration: none;
+  border: 1px solid #000;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn-back:hover {
+  background-color: #000;
+  color: #fff;
+}
