@@ -1,159 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le damos sentido a lo que no tiene</title>
-    
-    <!-- Tipografía vintage desde Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Le damos sentido a lo que no tiene</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Dancing+Script&display=swap');
 
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Special Elite', monospace;
-            background-color: #f7eedc;
-            background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
-            background-size: repeat;
-            background-attachment: fixed;
-            color: #3b2f2f;
-            line-height: 1.6;
-        }
-        a {
-            color: #6b4c3b;
-            text-decoration: none;
-        }
-        a:hover { text-decoration: underline; }
-        header {
-            background-color: rgba(215,193,160,0.9);
-            padding: 40px 20px;
-            text-align: center;
-            border-bottom: 2px solid #3b2f2f;
-        }
-        header h1 { margin: 0; font-size: 3em; letter-spacing: 1px; }
-        header p { font-style: italic; margin-top: 10px; font-size: 1.2em; }
-        nav {
-            background-color: rgba(201,177,138,0.9);
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
-        }
-        nav a { margin: 0 20px; font-weight: bold; }
-        section { max-width: 800px; margin: 40px auto; padding: 0 20px; }
-        h2 { border-bottom: 1px solid #3b2f2f; padding-bottom: 5px; margin-bottom: 20px; }
-        .proyecto { margin-bottom: 40px; }
-        .capitulo {
-            margin-bottom: 25px;
-            background-color: rgba(255,248,235,0.8);
-            padding: 20px;
-            border-left: 5px solid #6b4c3b;
-            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-        }
-        .capitulo h4 { margin-top: 0; }
-        .navegacion { margin-top: 15px; }
-        button {
-            background-color: #6b4c3b;
-            color: #f4ecd8;
-            border: none;
-            padding: 8px 16px;
-            margin: 5px;
-            cursor: pointer;
-            font-family: 'Special Elite', monospace;
-            transition: 0.3s;
-        }
-        button:hover { background-color: #3b2f2f; }
-        .bio {
-            background-color: rgba(230,217,195,0.9);
-            padding: 20px;
-            border-left: 5px solid #6b4c3b;
-        }
-        form input, form textarea {
-            width: 100%; padding: 8px; margin: 5px 0 15px;
-            border: 1px solid #6b4c3b; background-color: #fff8f0;
-            font-family: 'Special Elite', monospace;
-        }
-        form textarea { resize: vertical; }
-        footer {
-            text-align: center; padding: 20px;
-            border-top: 2px solid #3b2f2f;
-            background-color: rgba(215,193,160,0.9); margin-top: 40px;
-        }
-        header, section, footer { animation: fadeIn 1s ease-out; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px);} to { opacity: 1; transform: translateY(0);} }
-    </style>
+    body {
+      font-family: "Merriweather", Georgia, serif;
+      background-color: #fdfcf8;
+      color: #222;
+      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 50px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-style: italic;
+      color: #555;
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+
+    .firma {
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.8rem;
+      color: #444;
+    }
+
+    main {
+      max-width: 750px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    article {
+      margin-bottom: 80px;
+    }
+
+    article h2 {
+      font-size: 1.7rem;
+      margin-bottom: 10px;
+    }
+
+    article p {
+      text-align: justify;
+    }
+
+    footer {
+      border-top: 1px solid #ddd;
+      text-align: center;
+      padding: 40px 20px;
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      color: #666;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Le damos sentido a lo que no tiene</h1>
-        <p>Un espacio para historias nacidas entre el insomnio y los recuerdos.</p>
-    </header>
+  <header>
+    <h1>Le damos sentido a lo que no tiene</h1>
+    <p>por Edgar Fretes</p>
+    <div class="firma">— Edgar.</div>
+  </header>
 
-    <nav>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
+  <main>
+    <article>
+      <h2>Capítulo I — Entre el sueño y la nada</h2>
+      <p>
+        El sueño no comenzó como un sueño, sino como un recuerdo que se resistía a morir. 
+        Las paredes eran idénticas a las de mi habitación, pero la ventana daba hacia un cielo que no conocía. 
+        A veces pienso que los sueños son solo los lugares que olvidamos visitar mientras estamos despiertos.
+      </p>
+    </article>
 
-    <section id="proyectos">
-        <h2>Proyectos</h2>
-        <div class="proyecto">
-            <h3>Entre el sueño y la nada</h3>
+    <article>
+      <h2>Capítulo II — Despierto</h2>
+      <p>
+        No hay sonido más fuerte que el del silencio cuando uno vuelve del otro lado. 
+        Todo parece igual, pero algo se ha movido, aunque nadie más lo note. 
+        Quizás el insomnio no sea el enemigo, sino la puerta que dejamos entreabierta hacia nosotros mismos.
+      </p>
+    </article>
+  </main>
 
-            <!-- Capítulo 1 -->
-            <div class="capitulo" id="cap1">
-                <h4>Capítulo 1</h4>
-                <p>Contenido del primer capítulo...</p>
-                <div class="navegacion">
-                    <button disabled>Anterior</button>
-                    <a href="#cap2"><button>Siguiente</button></a>
-                </div>
-            </div>
-
-            <!-- Capítulo 2 -->
-            <div class="capitulo" id="cap2">
-                <h4>Capítulo 2</h4>
-                <p>Contenido del segundo capítulo...</p>
-                <div class="navegacion">
-                    <a href="#cap1"><button>Anterior</button></a>
-                    <a href="#cap3"><button>Siguiente</button></a>
-                </div>
-            </div>
-
-            <!-- Capítulo 3 -->
-            <div class="capitulo" id="cap3">
-                <h4>Capítulo 3</h4>
-                <p>Contenido del tercer capítulo...</p>
-                <div class="navegacion">
-                    <a href="#cap2"><button>Anterior</button></a>
-                    <button disabled>Siguiente</button>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="sobre-mi">
-        <h2>Sobre mí</h2>
-        <div class="bio">
-            <p>Edgar Fretes es enfermero, viajero y observador de la vigilia y los sueños. Encuentra en la noche y en el insomnio la inspiración para escribir, convirtiendo recuerdos, pensamientos y silencios en palabras que buscan dar sentido a lo que no lo tiene. Entre el sueño y la nada es su primera obra publicada en este espacio.</p>
-        </div>
-    </section>
-
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <form>
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre" required><br>
-            <label for="email">Correo electrónico:</label><br>
-            <input type="email" id="email" name="email" required><br>
-            <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
-    <footer>
-        &copy; 2025 Edgar Fretes. Todos los derechos reservados.
-    </footer>
+  <footer>
+    <p>© 2025 Edgar Fretes — Blog personal | <a href="#">Contacto</a></p>
+  </footer>
 </body>
 </html>
